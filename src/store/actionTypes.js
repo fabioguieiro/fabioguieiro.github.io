@@ -1,0 +1,2 @@
+export const ADD_STARRED = 'ADD_STARRED'
+export const REMOVE_STARRED = 'REMOVE_STARRED'

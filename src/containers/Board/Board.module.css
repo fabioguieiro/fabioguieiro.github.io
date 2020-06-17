@@ -1,0 +1,113 @@
+.center{
+    position: absolute;
+    height:90%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.loader {
+    font-size: 10px;
+    text-indent: -9999em;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #00a59d;
+    background: -moz-linear-gradient(left, #00a59d 10%, rgba(0,165,157, 0) 42%);
+    background: -webkit-linear-gradient(left, #00a59d 10%, rgba(0,165,157, 0) 42%);
+    background: -o-linear-gradient(left, #00a59d 10%, rgba(0,165,157, 0) 42%);
+    background: -ms-linear-gradient(left, #00a59d 10%, rgba(0,165,157, 0) 42%);
+    background: linear-gradient(to right, #00a59d 10%, rgba(0,165,157, 0) 42%);
+    position: relative;
+    -webkit-animation: load3 1.4s infinite linear;
+    animation: load3 1.4s infinite linear;
+    -webkit-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    transform: translateZ(0);
+  }
+  .loader:before {
+    width: 50%;
+    height: 50%;
+    background: #00a59d;
+    border-radius: 100% 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+  }
+  .loader:after {
+    background: #0f1820;
+    width: 75%;
+    height: 75%;
+    border-radius: 50%;
+    content: '';
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+  }
+  @-webkit-keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  @keyframes load3 {
+    0% {
+      -webkit-transform: rotate(0deg);
+      transform: rotate(0deg);
+    }
+    100% {
+      -webkit-transform: rotate(360deg);
+      transform: rotate(360deg);
+    }
+  }
+  .button{
+    background-color: #0f1820;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #00a59d;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-style: solid;
+    border-color: #00a59d;
+    border-width: 1px;
+    border-radius: 5px;
+  }
+  .button:active{
+    color: #0f1820;
+    background-color: #00a59d;
+  }
+  .selected{
+    width: 30px;
+    height: 30px;
+    border-color: #00a59d;
+    border-width: 1px;
+    border-radius: 5px;
+    border-style: solid;
+    color: #0f1820;
+    background-color: #00a59d;
+  }
+  .buttonContainer{
+    position: relative;
+    margin-left: 20%;
+    margin-top: 20%;
+    margin-bottom: 2%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+  }
+  @media (min-width: 499px){
+    .buttonContainer{
+      margin-left: 35%;
+      margin-top: 8%;
+      width: 30%;
+    }
+  }

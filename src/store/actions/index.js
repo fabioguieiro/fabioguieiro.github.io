@@ -1,0 +1,1 @@
+export {addStarred, removeStarred} from './starred'
